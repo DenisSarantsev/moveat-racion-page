@@ -1,0 +1,13 @@
+
+// Base
+@use "./assets/styles/base.scss" as *;
+
+// Common
+@use "./assets/styles/common/nullstyle.scss" as *;
+@use "./assets/styles/common/common.scss" as *;
+@use "./assets/styles/common/colors.scss" as *;
+@use "./assets/styles/common/fonts.scss" as *;
+
+// Blocks
+@use "./assets/styles/blocks/start-block.scss" as *;
+@use "./assets/styles/blocks/body-system.scss" as *;

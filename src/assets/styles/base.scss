@@ -1,0 +1,12 @@
+@use "./common/colors.scss" as *;
+
+body {
+	font-family: "ProximaNovaRegular", Arial, sans-serif;
+	color: $main-color;
+}
+
+section {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}

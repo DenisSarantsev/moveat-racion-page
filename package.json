@@ -1,0 +1,18 @@
+{
+  "name": "moveat-razion-page",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.1.0"
+  },
+  "dependencies": {
+    "sass": "^1.90.0",
+    "swiper": "^11.2.10"
+  }
+}

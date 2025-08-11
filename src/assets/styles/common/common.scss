@@ -1,0 +1,16 @@
+@use "./colors.scss" as *;
+
+.max-block-width {
+	max-width: 1279px;
+};
+
+.razion-title {
+	font-size: 50px;
+	font-family: "ProximaNovaBold", Arial, sans-serif;
+	color: $accent-color;
+	line-height: 120%;
+};
+
+.wrapper-paddings {
+	padding: 75px 15px 100px 15px;
+}

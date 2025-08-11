@@ -1,0 +1,66 @@
+@use "../common/colors.scss" as *;
+
+.razion-body-system {
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+			gap: 50px;
+		}
+		&__title {
+			text-align: center;
+		}
+		&__content {
+			display: grid;
+			gap: 15px;
+			grid-template-columns: repeat(2, 1fr);
+		}
+		&__left {
+			z-index: 5;
+			height: 100%;
+			background-color: red;
+			position: relative;
+			display: flex;
+			align-items: center;
+		}
+		&__left-wrapper {
+			z-index: 6;
+			position: relative;
+			background-color: deepskyblue;
+			height: auto;
+			width: 100%;
+			& svg {
+				position: absolute;
+				inset: 0;        // top/right/bottom/left: 0
+				object-fit: cover;
+				width: 119%;
+				height: 120%;
+				margin-left: -33px;
+				margin-top: -12px;
+				z-index: 0;
+			}
+		}
+		&__left-content {
+			position: relative;
+			height: 100%;
+			width: 100%;
+			z-index: 7;
+			//background-color: pink;
+		}
+		&__left-top {
+			//background-color: green;
+			padding: 50px 56px;
+			&_title {
+			}
+			&_subtitle {
+			}
+		}
+		&__left-bottom {
+			&_subtitle {
+			}
+		}
+		&__right {
+			z-index: 4;
+		}
+		&__right-image {
+		}
+}
