@@ -14,3 +14,16 @@
 .wrapper-paddings {
 	padding: 75px 15px 100px 15px;
 }
+
+.regular-button {
+	background-color: $accent-color;
+	padding: 16px 24px;
+	font-family: "ProximaNovaBold", Arial, sans-serif;
+	transition: all 0.3s ease 0s;
+	font-size: 24px;
+	color: #FFFFFF;
+	&:hover {
+		background-color: $hover-accent-color;
+		transition: all 0.3s ease 0s;
+	}
+}

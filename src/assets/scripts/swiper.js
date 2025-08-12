@@ -8,7 +8,8 @@ import 'swiper/css/pagination';
 new Swiper('.js-cases-swiper', {
   modules: [Navigation, Pagination],
   loop: true,
-  slidesPerView: 2,
+	effect: 'slide',
+  slidesPerView: 1,
   spaceBetween: 16,
   pagination: {
     el: '.razion-cases-slider .swiper-pagination',
@@ -20,7 +21,6 @@ new Swiper('.js-cases-swiper', {
   },
   breakpoints: {
     768: { slidesPerView: 2 },
-    1024: { slidesPerView: 3 },
   },
 });
 

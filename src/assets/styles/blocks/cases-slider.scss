@@ -1,0 +1,84 @@
+@use "../common/colors.scss" as *;
+
+
+.razion-cases-slider {
+	background-color: $light-grey-background;
+	&__wrapper {
+		position: relative;
+    max-width: 100%; // ширина контента
+    margin: 0 auto;
+	}
+  .swiper {
+    overflow: hidden; // прячем «хвосты» слайдов, но НЕ стрелки (они вне .swiper)
+  }
+}
+.swiper {
+}
+.js-cases-swiper {
+
+	&__slide {
+	}
+}
+.swiper-wrapper {
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+.swiper-slide {
+	min-height: 100%;
+	opacity: 0;
+	animation: hiddenSlide 1s ease 0s forwards;
+	padding: 0px 0px 0px 60px;
+	&.swiper-slide-active {
+		animation: showSlide 0.3s ease 0.2s forwards;
+		opacity: 1;
+		padding: 0px 0px 0px 60px;
+	}
+	&.swiper-slide-next {
+		animation: showSlide 0.5s ease 0s forwards;
+		padding: 0px 60px 0px 0px;
+	}
+}
+.case-slide {
+	height: 100%;
+	&__content {
+		display: block;
+		background-color: $regular-grey-color;
+		padding: 50px 30px;
+		text-align: center;
+		font-size: 22px;
+		line-height: 120%;
+	}
+}
+
+
+
+
+
+.swiper-pagination {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+
+
+@keyframes showSlide {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes hiddenSlide {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
