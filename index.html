@@ -8,6 +8,7 @@
   </head>
   <body>
     <main>
+
 			<section class="razion-start-block">
 				<div class="razion-start-block__wrapper max-block-width wrapper-paddings">
 					<h1 class="razion-start-block__title razion-title">Еда будет вашим лекарством!</h1>
@@ -62,7 +63,7 @@
 							</div>
 							<div class="razion-start-block__ask">
 								<h4 class="razion-start-block__ask_title">А мне поможет рацион питания?</h4>
-								<a href="#">Задать вопрос доктору</a>
+								<a href="#" target="_blank">Задать вопрос доктору</a>
 							</div>
 						</div>
 						<div class="razion-start-block__right">
@@ -182,8 +183,12 @@
 						<!-- Пагинация -->
 						<div class="swiper-pagination"></div>
 						<!-- Стрелки -->
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev">
+							<img src="/img/icons/orange-triangle.svg" alt="orange slider arrow">
+						</div>
+						<div class="swiper-button-next">
+							<img src="/img/icons/orange-triangle.svg" alt="orange slider arrow">
+						</div>
 					</div>
 				</div>
 			</section>
@@ -201,7 +206,7 @@
 					</div>
 					<div class="razion-faq__questions-block">
 						<ul class="razion-faq__questions-list">
-							<li class="razion-faq__questions-list-item">
+							<li class="razion-faq__questions-list-item faq-item-closed">
 								<div class="razion-faq__questions-list-item_title-block">
 									<div class="razion-faq__questions-list-item_title-block-title">
 										Ваш список продуктов
@@ -212,7 +217,7 @@
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus magni id architecto sapiente repellat? Aliquid non deserunt, recusandae, modi laudantium alias provident culpa numquam tempora distinctio, animi nisi quam praesentium?
 								</div>
 							</li>
-							<li class="razion-faq__questions-list-item">
+							<li class="razion-faq__questions-list-item faq-item-closed">
 								<div class="razion-faq__questions-list-item_title-block">
 									<div class="razion-faq__questions-list-item_title-block-title">
 										Ваш список продуктов
@@ -223,7 +228,7 @@
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus magni id architecto sapiente repellat? Aliquid non deserunt, recusandae, modi laudantium alias provident culpa numquam tempora distinctio, animi nisi quam praesentium?
 								</div>
 							</li>
-							<li class="razion-faq__questions-list-item">
+							<li class="razion-faq__questions-list-item faq-item-closed">
 								<div class="razion-faq__questions-list-item_title-block">
 									<div class="razion-faq__questions-list-item_title-block-title">
 										Ваш список продуктов
@@ -246,14 +251,84 @@
 				<div class="razion-reviews-slider__wrapper max-block-width wrapper-paddings">
 					<div class="swiper js-reviews-swiper">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide">Отзыв 1</div>
-							<div class="swiper-slide">Отзыв 2</div>
-							<div class="swiper-slide">Отзыв 3</div>
+							<div class="swiper-slide photo-review-slide">
+								<div class="photo-review-slide__wrapper">
+									<div class="photo-review-slide__left">
+										<div class="photo-review-slide__left_green-block"></div>
+										<img src="/img/palms.png" alt="review image" class="photo-review-slide__left_image">
+									</div>
+									<div class="photo-review-slide__right">
+										<div class="photo-review-slide__right_arrow-container">
+											<div class="photo-review-slide__right_arrow-elem"></div>
+										</div>
+										<div class="photo-review-slide__right_content review-content">
+											<div class="review-content__name">
+												<img src="/img/icons/facebook-logo.png" alt="social icon" class="review-content__icon">
+												<div class="review-content__name-label">Иван</div>
+											</div>
+											<div class="review-content__review-text">
+												Я так благодарен вашей команде с Максом во главе) Мне 30 и я с ног на голову за два года перевернул свою жизнь! Теперь квашу капустку, пью оливыч, низкожировая кисломолочка, и прочее прочее прочее)))) Спасибо, что вы есть!
+											</div>
+											<a href="#">Больше отзывов</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide photo-review-slide">
+								<div class="photo-review-slide__wrapper">
+									<div class="photo-review-slide__left">
+										<div class="photo-review-slide__left_green-block"></div>
+										<img src="/img/palms.png" alt="review image" class="photo-review-slide__left_image">
+									</div>
+									<div class="photo-review-slide__right">
+										<div class="photo-review-slide__right_arrow-container">
+											<div class="photo-review-slide__right_arrow-elem"></div>
+										</div>
+										<div class="photo-review-slide__right_content review-content">
+											<div class="review-content__name">
+												<img src="/img/icons/facebook-logo.png" alt="social icon" class="review-content__icon">
+												<div class="review-content__name-label">Иван</div>
+											</div>
+											<div class="review-content__review-text">
+												Я так благодарен вашей команде с Максом во главе) Мне 30 и я с ног на голову за два года перевернул свою жизнь! Теперь квашу капустку, пью оливыч, низкожировая кисломолочка, и прочее прочее прочее)))) Спасибо, что вы есть!
+											</div>
+											<a href="#">Больше отзывов</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide photo-review-slide">
+								<div class="photo-review-slide__wrapper">
+									<div class="photo-review-slide__left">
+										<div class="photo-review-slide__left_green-block"></div>
+										<img src="/img/palms.png" alt="review image" class="photo-review-slide__left_image">
+									</div>
+									<div class="photo-review-slide__right">
+										<div class="photo-review-slide__right_arrow-container">
+											<div class="photo-review-slide__right_arrow-elem"></div>
+										</div>
+										<div class="photo-review-slide__right_content review-content">
+											<div class="review-content__name">
+												<img src="/img/icons/facebook-logo.png" alt="social icon" class="review-content__icon">
+												<div class="review-content__name-label">Иван</div>
+											</div>
+											<div class="review-content__review-text">
+												Я так благодарен вашей команде с Максом во главе) Мне 30 и я с ног на голову за два года перевернул свою жизнь! Теперь квашу капустку, пью оливыч, низкожировая кисломолочка, и прочее прочее прочее)))) Спасибо, что вы есть!
+											</div>
+											<a href="#" target="_blank">Больше отзывов</a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 
 						<div class="swiper-pagination"></div>
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev">
+							<img src="/img/icons/orange-triangle.svg" alt="orange slider arrow">
+						</div>
+						<div class="swiper-button-next">
+							<img src="/img/icons/orange-triangle.svg" alt="orange slider arrow">
+						</div>
 					</div>
 				</div>
 			</section>
@@ -261,9 +336,9 @@
 			<section class="razion-reviews-video">
 				<div class="razion-reviews-video__wrapper max-block-width wrapper-paddings">
 					<div class="razion-reviews-video__content">
-						<div class="razion-reviews-video__left">
+						<a href="#" target="_blank" class="razion-reviews-video__left">
 							<img src="/img/video-review.png" alt="video-review">
-						</div>
+						</a>
 						<div class="razion-reviews-video__right">
 							<div class="razion-reviews-video__right_wrapper">
 								<div class="razion-reviews-video__subtitle">
@@ -272,7 +347,7 @@
 								<div class="razion-reviews-video__name">
 									Интервью с Алексеем
 								</div>
-								<button class="razion-reviews-video__button">
+								<button class="razion-reviews-video__button regular-button">
 									Смотреть видео
 								</button>
 							</div>
@@ -280,7 +355,7 @@
 						</div>
 					</div>
 					<div class="razion-reviews-video__button-wrapper">
-						<a href="#">Смотреть еще отзывы</a>
+						<a class="regular-button" href="#">Смотреть еще отзывы</a>
 					</div>
 				</div>
 			</section>
@@ -288,28 +363,105 @@
 			<section class="razion-team">
 				<div class="razion-team__wrapper max-block-width wrapper-paddings">
 					<h2 class="razion-team__title">
-
+						Команда
 					</h2>
-					<div class="razion-team__content">
-
-					</div>
+					<ul class="razion-team__content">
+						<li class="razion-team__item team-item">
+							<div class="team-item__avatar-wrapper">
+								<img src="/img/max-avatar.jpg" alt="team member avatar" class="team-item__avatar-image">
+							</div>
+							<div class="team-item__content-wrapper">
+								<div class="team-item__content-wrapper_member-name">
+									Макс Погорелый
+								</div>
+								<div class="team-item__content-wrapper_post">
+									Руководитель клуба
+								</div>
+								<div class="team-item__content-wrapper_description">
+									Нутрициолог, стаж 25 лет, кандидат наук. Ведущий программы "Обман веществ"
+								</div>
+							</div>
+						</li>
+						<li class="razion-team__item team-item">
+							<div class="team-item__avatar-wrapper">
+								<img src="/img/max-avatar.jpg" alt="team member avatar" class="team-item__avatar-image">
+							</div>
+							<div class="team-item__content-wrapper">
+								<div class="team-item__content-wrapper_member-name">
+									Макс Погорелый
+								</div>
+								<div class="team-item__content-wrapper_post">
+									Руководитель клуба
+								</div>
+								<div class="team-item__content-wrapper_description">
+									Нутрициолог, стаж 25 лет, кандидат наук. Ведущий программы "Обман веществ"
+								</div>
+							</div>
+						</li>
+						<li class="razion-team__item team-item">
+							<div class="team-item__avatar-wrapper">
+								<img src="/img/max-avatar.jpg" alt="team member avatar" class="team-item__avatar-image">
+							</div>
+							<div class="team-item__content-wrapper">
+								<div class="team-item__content-wrapper_member-name">
+									Макс Погорелый
+								</div>
+								<div class="team-item__content-wrapper_post">
+									Руководитель клуба
+								</div>
+								<div class="team-item__content-wrapper_description">
+									Нутрициолог, стаж 25 лет, кандидат наук. Ведущий программы "Обман веществ"
+								</div>
+							</div>
+						</li>
+						<li class="razion-team__item team-item">
+							<div class="team-item__avatar-wrapper">
+								<img src="/img/max-avatar.jpg" alt="team member avatar" class="team-item__avatar-image">
+							</div>
+							<div class="team-item__content-wrapper">
+								<div class="team-item__content-wrapper_member-name">
+									Макс Погорелый
+								</div>
+								<div class="team-item__content-wrapper_post">
+									Руководитель клуба
+								</div>
+								<div class="team-item__content-wrapper_description">
+									Нутрициолог, стаж 25 лет, кандидат наук. Ведущий программы "Обман веществ"
+								</div>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</section>
 
 			<section class="razion-pricing">
 				<div class="razion-pricing__wrapper max-block-width wrapper-paddings">
-					<div class="razion-pricing__green-bg"></div>
 					<div class="razion-pricing__content">
+						<div class="razion-pricing__green-bg"></div>
+						<div class="razion-pricing__white-bg"></div>
 						<h2 class="razion-pricing__title razion-title">Стоимость</h2>
 						<div class="razion-pricing__cards">
 							<div class="razion-pricing__card">
-								<div class="razion-pricing__card_subtitle">
-									Индивидуальний рацион с рассмотрением анализов  
+								<div class="razion-pricing__card_top">
+									<div class="razion-pricing__card_subtitle">
+										Индивидуальний рацион с рассмотрением анализов  
+									</div>
+									<div class="razion-pricing__card_price">
+										130$
+									</div>
 								</div>
-								<div class="razion-pricing__card_price">
-									130$
+								<a href="#" target="_blank">Заказать</a>
+							</div>
+							<div class="razion-pricing__card">
+								<div class="razion-pricing__card_top">
+									<div class="razion-pricing__card_subtitle">
+										Индивидуальний рацион с рассмотрением анализов  
+									</div>
+									<div class="razion-pricing__card_price">
+										130$
+									</div>
 								</div>
-								<a href="#">Заказать</a>
+								<a href="#" target="_blank">Заказать</a>
 							</div>
 						</div>
 					</div>

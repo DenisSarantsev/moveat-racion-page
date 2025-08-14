@@ -33,6 +33,9 @@
 			&>*:not(:last-child) {
 				border-bottom: 1px solid #A4A4A4;
 			}
+			@media (max-width: 768px){
+				gap: 10px;
+			}
 		}
 		&__questions-list-item {
 			&_title-block {
@@ -43,10 +46,21 @@
 				align-items: center;
 				font-size: 24px;
 				line-height: 120%;
+				&:hover {
+					cursor: pointer;
+					color: $hover-accent-color;
+					transition: all 0.3s ease 0s;
+				}
+				@media (max-width: 768px){
+					padding: 16px 10px;
+				}
 			}
 			&_title-block-title {
 			}
 			&_description-block {
+				padding: 0px 10px 20px 10px;
+				font-size: 22px;
+				line-height: 120%;
 			}
 		}
 		&__download-button {
@@ -58,4 +72,31 @@
 .wrapper-paddings {
 }
 .razion-title {
+}
+
+
+.faq-item-closed {
+	&>*:last-child {
+		height: 0px;
+		overflow: hidden;
+		padding: 0px 10px 0px 10px;
+		transition: all 0.2s ease 0s;
+	}
+	&>*:first-child {
+		&>*:last-child {
+			transition: all 0.3s ease 0s;
+		}
+	}
+}
+.faq-item-opened {
+	&>*:last-child {
+		height: auto;
+		transition: all 0.2s ease 0s;
+	}
+	&>*:first-child {
+		&>*:last-child {
+			transform: rotate(180deg);
+			transition: all 0.3s ease 0s;
+		}
+	}
 }

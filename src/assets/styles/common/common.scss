@@ -26,4 +26,45 @@
 		background-color: $hover-accent-color;
 		transition: all 0.3s ease 0s;
 	}
+	a {
+		color: inherit;          // берёт цвет родителя
+		text-decoration: none;   // убираем подчёркивание
+	}
+}
+
+
+
+// Общие стили слайдеров
+.swiper-button-prev {
+	& img {
+		height: 46px;
+		width: 54px;
+	}
+	&::after {
+		display: none;
+	}
+}
+.swiper-button-next {
+	& img {
+		height: 46px;
+		width: 54px;
+		transform: rotate(180deg);
+	}
+	&::after {
+		display: none;
+	}
+}
+.swiper-pagination-bullet {
+	width: 20px !important;
+	height: 20px !important;
+	border-radius: 50% !important;
+	border: 2px solid $accent-color !important;
+	opacity: 1 !important;
+	background: transparent !important;
+}
+.swiper-pagination-bullet-active {
+	width: 20px !important;
+	height: 20px !important;
+	border-radius: 50% !important;
+	background: $accent-color !important;
 }
