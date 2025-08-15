@@ -1,5 +1,5 @@
 @use "../common/colors.scss" as *;
-
+@use "../common/breakpoints.scss" as *;
 
 .razion-cases-slider {
 	background-color: $light-grey-background;
@@ -22,24 +22,29 @@
 .swiper-wrapper {
 	padding-bottom: 60px;
 	padding-top: 40px;
+	display: flex;
+	align-items: stretch;
+	@media (max-width: $tablet){
+		align-items: center;
+	}
 }
 .swiper-slide {
-	min-height: 100%;
 	opacity: 1;
-	//animation: hiddenSlide 1s ease 0s forwards;
-	//padding: 0px 0px 0px 60px;
 	&.swiper-slide-active {
-		//animation: showSlide 0.3s ease 0.2s forwards;
 		opacity: 1;
 		padding: 0px 0px 0px 60px;
+		@media (max-width: $tablet){
+			padding: 0px 15px;
+		}
+		@media (max-width: $small-tablet){
+			padding: 0px 0px;
+		}
 	}
 	&.swiper-slide-next {
-		//animation: showSlide 0.5s ease 0s forwards;
 		padding: 0px 60px 0px 0px;
 	}
 }
 .case-slide {
-	height: 100%;
 	&__content {
 		display: block;
 		background-color: $regular-grey-color;
@@ -47,6 +52,20 @@
 		text-align: center;
 		font-size: 22px;
 		line-height: 120%;
+		@media (max-width: $small-tablet){
+			font-size: 20px;
+			padding: 30px 15px;
+		}
+		@media (max-width: $mobile){
+			font-size: 18px;
+			padding: 20px 10px;
+			line-height: 110%;
+		}
+		@media (max-width: $small-mobile){
+			font-size: 16px;
+			padding: 20px 10px;
+			line-height: 110%;
+		}
 	}
 }
 

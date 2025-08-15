@@ -1,7 +1,8 @@
 @use "./colors.scss" as *;
+@use "./breakpoints.scss" as *;
 
 .max-block-width {
-	max-width: 1279px;
+	max-width: 1280px;
 };
 
 .razion-title {
@@ -9,10 +10,28 @@
 	font-family: "ProximaNovaBold", Arial, sans-serif;
 	color: $accent-color;
 	line-height: 120%;
+	@media (max-width: $small-tablet){
+		text-align: center;
+		font-size: 44px;
+	}
+	@media (max-width: $mobile){
+		font-size: 36px;
+		line-height: 110%;
+	}
+	@media (max-width: $small-mobile){
+		font-size: 30px;
+		line-height: 110%;
+	}
 };
 
 .wrapper-paddings {
 	padding: 75px 15px 100px 15px;
+	@media (max-width: $wrapper){
+		padding: 5.86vw 15px 7.81vw 15px;
+	}
+	@media (max-width: $mobile){
+		padding: 50px 15px 40px 15px
+	}
 }
 
 .regular-button {
@@ -22,9 +41,16 @@
 	transition: all 0.3s ease 0s;
 	font-size: 24px;
 	color: #FFFFFF;
-	&:hover {
-		background-color: $hover-accent-color;
-		transition: all 0.3s ease 0s;
+	@media (max-width: $mobile){
+		width: 100%;
+		padding: 14px 14px;
+		font-size: 22px;
+	}
+	@media (min-width: $mobile){
+		&:hover {
+			background-color: $hover-accent-color;
+			transition: all 0.3s ease 0s;
+		}
 	}
 	a {
 		color: inherit;          // берёт цвет родителя
@@ -39,6 +65,9 @@
 	& img {
 		height: 46px;
 		width: 54px;
+		@media (max-width: $tablet){
+			display: none;
+		}
 	}
 	&::after {
 		display: none;
@@ -49,6 +78,9 @@
 		height: 46px;
 		width: 54px;
 		transform: rotate(180deg);
+		@media (max-width: $tablet){
+			display: none;
+		}
 	}
 	&::after {
 		display: none;

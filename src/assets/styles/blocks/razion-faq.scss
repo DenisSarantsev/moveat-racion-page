@@ -1,10 +1,12 @@
 @use "../common/colors.scss" as *;
+@use "../common/breakpoints.scss" as *;
 
 .razion-faq {
 		&__wrapper {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			gap: 10px;
 		}
 		&__title {
 			text-align: center;
@@ -13,6 +15,13 @@
 			text-align: center;
 			font-size: 24px;
 			line-height: 120%;
+			@media (max-width: $small-tablet){
+				text-align: center;
+				font-size: 30px;
+			}
+			@media (max-width: $mobile){
+				font-size: 22px;
+			}
 		}
 		&__info-message {
 			padding: 10px;
@@ -21,10 +30,20 @@
 			line-height: 120%;
 			font-weight: 400;
 			margin-top: 10px;
+			@media (max-width: $mobile){
+				padding: 15px 10px;
+				text-align: center;
+			}
 		}
 		&__questions-block {
 			margin-top: 40px;
 			max-width: 520px;
+			@media (max-width: $small-tablet){
+				margin-top: 20px;
+			}
+			@media (max-width: $mobile){
+				margin-top: 10px;
+			}
 		}
 		&__questions-list {
 			display: flex;
@@ -46,13 +65,20 @@
 				align-items: center;
 				font-size: 24px;
 				line-height: 120%;
-				&:hover {
-					cursor: pointer;
-					color: $hover-accent-color;
-					transition: all 0.3s ease 0s;
+				@media (min-width: $mobile){
+					&:hover {
+						cursor: pointer;
+						color: $hover-accent-color;
+						transition: all 0.3s ease 0s;
+					}
 				}
-				@media (max-width: 768px){
+				@media (max-width: $small-tablet){
 					padding: 16px 10px;
+					font-size: 22px;
+				}
+				@media (max-width: $mobile){
+					padding: 12px 10px;
+					font-size: 20px;
 				}
 			}
 			&_title-block-title {
@@ -61,10 +87,21 @@
 				padding: 0px 10px 20px 10px;
 				font-size: 22px;
 				line-height: 120%;
+				@media (max-width: $small-tablet){
+					padding: 5px 10px 16px 10px;
+					font-size: 20px;
+				}
+				@media (max-width: $mobile){
+					padding: 5px 10px 16px 10px;
+					font-size: 18px;
+				}
 			}
 		}
 		&__download-button {
 			margin-top: 32px;
+			@media (max-width: $tablet){
+				margin-top: 3.23vw;
+			}
 		}
 }
 .max-block-width {

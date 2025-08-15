@@ -20,7 +20,8 @@ new Swiper('.js-cases-swiper', {
     prevEl: '.razion-cases-slider .swiper-button-prev',
   },
   breakpoints: {
-    768: { slidesPerView: 2 },
+    992: { slidesPerView: 2 },
+		0: { slidesPerView: 1 },
   },
 });
 
