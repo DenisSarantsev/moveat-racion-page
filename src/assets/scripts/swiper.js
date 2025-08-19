@@ -11,6 +11,7 @@ new Swiper('.js-cases-swiper', {
 	effect: 'slide',
   slidesPerView: 1,
   spaceBetween: 16,
+	autoHeight: true, // подгон высоты под активный слайд
   pagination: {
     el: '.razion-cases-slider .swiper-pagination',
     clickable: true,
@@ -30,7 +31,7 @@ new Swiper('.js-reviews-swiper', {
   modules: [Navigation, Pagination],
   loop: true,
   slidesPerView: 1,
-  spaceBetween: 16,
+  spaceBetween: 0,
   pagination: {
     el: '.razion-reviews-slider .swiper-pagination',
     clickable: true,

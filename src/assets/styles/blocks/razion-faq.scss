@@ -102,6 +102,9 @@
 			@media (max-width: $tablet){
 				margin-top: 3.23vw;
 			}
+			@media (max-width: $mobile){
+				font-size: 20px;
+			}
 		}
 }
 .max-block-width {

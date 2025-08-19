@@ -10,9 +10,17 @@
 			gap: 60px;
 		}
 		&__content {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
+			display: flex;
+			justify-content: space-between;
 			gap: 60px;
+			 align-items: stretch;
+			@media (max-width: $wrapper){
+				gap: 15px;
+			}
+			@media (max-width: $small-tablet){
+				flex-direction: column;
+
+			}
 		}
 		&__left {
 			width: 100%;
@@ -22,12 +30,14 @@
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
+			  display: block;
 			}
 		}
 		&__right {
 			position: relative;
+			width: 100%;
 			&_wrapper {
-				position: absolute;
+				position: relative;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -38,6 +48,10 @@
 				gap: 40px;
 				box-shadow: $main-block-shadow;
 				background-color: #FFFFFF;
+				@media (max-width: $wrapper){
+					padding: 25px 4.3vw;
+					gap: 3.13vw;
+				}
 			}
 			&_green-bg {
 				position: absolute;
@@ -52,15 +66,34 @@
 		&__subtitle {
 			font-size: 24px;
 			text-align: center;
+			@media (max-width: $tablet){
+				font-size: 22px;
+			}
+			@media (max-width: $small-tablet){
+				font-size: 18px;
+			}
 		}
 		&__name {
 			font-size: 24px;
 			padding-bottom: 20px;
+			@media (max-width: $tablet){
+				font-size: 22px;
+			}
+			@media (max-width: $small-tablet){
+				font-size: 18px;
+			}
 		}
 		&__button {
-
+			@media (max-width: $mobile){
+				font-size: 20px;
+			}
 		}
 		&__button-wrapper {
+			& a {
+				@media (max-width: $mobile){
+					font-size: 20px;
+				}
+			}
 		}
 }
 .max-block-width {

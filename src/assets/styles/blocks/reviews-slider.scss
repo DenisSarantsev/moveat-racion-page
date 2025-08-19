@@ -3,12 +3,26 @@
 
 .razion-reviews-slider {
 		&__wrapper {
+				max-width: 1280px;
+				@media (max-width: 1300px){
+					max-width: 100%;
+				}
 		}
 }
 .photo-review-slide {
+	position: relative;
 		&__wrapper {
 			display: flex;
 			align-items: center;
+			@media (max-width: 1300px){
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+			}
+			@media (max-width: $small-tablet){
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
 		}
 		&__left {
 			max-height: 500px;
@@ -17,6 +31,19 @@
 			min-height: 500px;
 			position: relative;
 			padding: 10px;
+			@media (max-width: $tablet){
+				transform: translateX(0px);
+				max-height: 50.4vw;
+				max-width: 50.4vw;
+				min-width: 50.4vw;
+				min-height: 50.4vw;
+			}
+			@media (max-width: $small-tablet){
+				max-height: 88vw;
+				max-width: 100%;
+				min-width: 100%;
+				min-height: 88vw;
+			}
 			&_green-block {
 				position: absolute;
 				bottom: -10px;
@@ -25,6 +52,9 @@
 				width: 100%;
 				height: 100%;
 				background-color: $second-accent-color;
+				@media (max-width: 1300px){
+					display: none;
+				}
 			}
 			&_image {
 				position: absolute;
@@ -34,10 +64,31 @@
 				height: 100%;
 				object-fit: cover;
 				transform: translateX(20px);
+				@media (max-width: $tablet){
+					transform: translateX(0px);
+					max-height: 50.4vw;
+					max-width: 50.4vw;
+					min-width: 50.4vw;
+					min-height: 50.4vw;
+				}
+				@media (max-width: $small-tablet){
+					position: relative;
+					max-height: 88vw;
+					max-width: 100%;
+					min-width: 100%;
+					min-height: 88vw;
+				}
 			}
 		}
 		&__right {
-			padding: 40px 60px 40px 20px;
+		@media (max-width: $tablet){
+			position: absolute;
+			right: 0px;
+		}
+		@media (max-width: $small-tablet){
+			position: relative;
+			width: 100%;
+		}
 			&_arrow-container {
 			}
 			&_arrow-elem {
@@ -54,9 +105,31 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 20px;
-	width: 110%;
+	width: 100%;
 	margin-left: -10%;
-	transform: translateX(-10px);
+	transform: translateX(-0px);
+	@media (max-width: 1300px){
+		width: auto;
+		padding: 3.08vw 3vw;
+		text-align: center;
+		transform: translateX(-70px);
+	}
+	@media (max-width: $tablet){
+		transform: translateX(-15px);
+		margin-left: 0%;
+		width: 45.36vw;
+	}
+	@media (max-width: $small-tablet){
+		position: relative;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: auto;
+		transform: translateX(0px);
+	}
+	@media (max-width: $mobile){
+		padding: 25px 15px;
+	}
 		&__name {
 			display: flex;
 			gap: 10px;
@@ -83,6 +156,16 @@
 			&:hover {
 				background-color: $hover-accent-color;
 				transition: all 0.3s ease 0s;
+			}
+		}
+		&__prev-button {
+			@media (max-width: $tablet){
+				display: none !important;
+			}
+		}
+		&__next-button {
+			@media (max-width: $tablet){
+				display: none !important;
 			}
 		}
 }

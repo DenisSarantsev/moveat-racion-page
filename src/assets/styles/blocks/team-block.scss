@@ -15,11 +15,30 @@
 		font-family: "ProximaNovaBold", Arial, sans-serif;
 		font-size: 50px;
 		line-height: 120%;
+		@media (max-width: $tablet){
+			font-size: 46px;
+			display: flex;
+			justify-content: center;
+			width: 100%;
+		}
+		@media (max-width: $small-tablet){
+			font-size: 42px;
+			text-align: center;
+		}
+		@media (max-width: $mobile){
+			font-size: 38px;
+		}
 	}
 	&__content {
 		display: grid;
 		grid-template-columns: repeat(4,1fr);
 		gap: 16px;
+		@media (max-width: $tablet){
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (max-width: $small-tablet){
+			grid-template-columns: repeat(1, 1fr);
+		}
 	}
 	&__item {
 	}
@@ -41,6 +60,11 @@
 		align-items: center;
 		border-radius: 50%;
 		z-index: 10;
+		@media (max-width: $small-tablet){
+			max-height: 195px;
+			max-width: 195px;
+			min-height: 195px;
+		}
 	}
 	&__avatar-image {
 		width: 100%;
@@ -48,6 +72,10 @@
 		max-width: 210px;
 		max-height: 210px;
 		border-radius: 50%;
+		@media (max-width: $small-tablet){
+			max-width: 180px;
+			max-height: 180px;
+		}
 	}
 	&__content-wrapper {
 		display: flex;

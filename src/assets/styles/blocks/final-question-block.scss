@@ -8,6 +8,15 @@
 			align-items: center;
 			justify-content: center;
 			gap: 70px;
+			@media (max-width: $wrapper){
+				gap: 20px;
+				display: grid;
+				grid-template-columns: 0.8fr 1.2fr;
+			}
+			@media (max-width: $small-tablet){
+				display: flex;
+				flex-direction: column;
+			}
 		}
 		&__left {
 			position: relative;
@@ -18,11 +27,18 @@
 				width: 100%;
 				height: 100%;
 				background-color: $second-accent-color;
+				@media (max-width: $wrapper){
+					display: none;
+				}
 			}
 			&_content {
 				height: 490px;
 				width: 415px;
 				position: relative;
+				@media (max-width: $wrapper){
+					width: 100%;
+					height: auto;
+				}
 			}
 			&_image {
 				position: absolute;
@@ -31,10 +47,21 @@
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
+				@media (max-width: $wrapper){
+					position: relative;
+				}
 			}
 			&_info {
 				padding: 16px 22px;
 				background-color: #FFFFFF;
+				@media (max-width: $small-tablet){
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					text-align: center;
+					gap: 6px;
+					padding: 22px 15px;
+				}
 			}
 			&_info-title {
 				color: $accent-color;
@@ -58,6 +85,11 @@
 				height: 100%;
 				background-color: $second-accent-color;
 				z-index: -2;
+				@media (max-width: $wrapper){
+					width: 100%;
+					height: auto;
+					position: relative;
+				}
 			}
 			&_white-bg {
 				position: absolute;
@@ -78,6 +110,16 @@
 				max-width: 600px;
 				background-color: #FFFFFF;
 				z-index: 2;
+				@media (max-width: $wrapper){
+					max-width: 100%;
+					height: auto;
+				}
+				@media (max-width: $tablet){
+					padding: 35px 30px;
+				}
+				@media (max-width: $mobile){
+					padding: 25px 15px;
+				}
 			}
 			&_title {
 				font-size: 32px;
@@ -85,13 +127,26 @@
 				font-family: "ProximaNovaBold", Arial, sans-serif;
 				line-height: 120%;
 				text-align: center;
+				@media (max-width: $tablet){
+					font-size: 30px;
+				}
+				@media (max-width: $small-tablet){
+					margin-top: -15px;
+					font-size: 28px;
+				}
 			}
 			&_text {
 				font-size: 24px;
 				line-height: 120%;
 				text-align: center;
+				@media (max-width: $tablet){
+					font-size: 22px;
+				}
 				& p {
 					margin-top: 10px;
+					@media (max-width: $tablet){
+						margin-top: 6px;
+					}
 				}
 			}
 			&_button {
@@ -104,6 +159,9 @@
 					display: flex;
 					justify-content: center;
 					width: auto;
+					@media (max-width: $mobile){
+						width: 100%;
+					}
 			}
 		}
 }
