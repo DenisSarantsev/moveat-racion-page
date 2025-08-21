@@ -2,6 +2,7 @@
 @use "../common/breakpoints.scss" as *;
 
 .razion-faq {
+	font-family: "ProximaNovaRegular", Arial, sans-serif;
 		&__wrapper {
 			display: flex;
 			flex-direction: column;
@@ -57,6 +58,31 @@
 			}
 		}
 		&__questions-list-item {
+			&.faq-item-opened {
+				&>*:last-child {
+					height: auto;
+					transition: all 0.2s ease 0s;
+				}
+				&>*:first-child {
+					& img {
+						transform: rotate(180deg);
+						transition: all 0.3s ease 0s;
+					}
+				}
+			}
+			&.faq-item-closed {
+				&>*:last-child {
+					height: 0px;
+					overflow: hidden;
+					padding: 0px 10px 0px 10px;
+					transition: all 0.2s ease 0s;
+				}
+				&>*:first-child {
+					& img  {
+						transition: all 0.3s ease 0s;
+					}
+				}
+			}
 			&_title-block {
 				padding: 16px 26px;
 				width: 100%;
@@ -107,36 +133,4 @@
 			}
 		}
 }
-.max-block-width {
-}
-.wrapper-paddings {
-}
-.razion-title {
-}
 
-
-.faq-item-closed {
-	&>*:last-child {
-		height: 0px;
-		overflow: hidden;
-		padding: 0px 10px 0px 10px;
-		transition: all 0.2s ease 0s;
-	}
-	&>*:first-child {
-		&>*:last-child {
-			transition: all 0.3s ease 0s;
-		}
-	}
-}
-.faq-item-opened {
-	&>*:last-child {
-		height: auto;
-		transition: all 0.2s ease 0s;
-	}
-	&>*:first-child {
-		&>*:last-child {
-			transform: rotate(180deg);
-			transition: all 0.3s ease 0s;
-		}
-	}
-}

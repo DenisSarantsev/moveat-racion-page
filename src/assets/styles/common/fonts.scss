@@ -1,8 +1,8 @@
 /* Основной шрифт (пример с двумя начертаниями) */
 @font-face {
-  font-family: 'ProximaNovaRegular';
-  src: url('/src/assets/fonts/ProximaNova-Regular.woff2') format('woff2'),
-			 url('/src/assets/fonts/ProximaNova-Regular.woff') format('woff');
+  font-family: 'Proxima Nova';
+  src: url('../../fonts/ProximaNova-Regular.woff2') format('woff2'),
+       url('../../fonts/ProximaNova-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -10,8 +10,8 @@
 
 @font-face {
   font-family: 'ProximaNovaBold';
-  src: url('/src/assets/fonts/ProximaNova-Bold.woff2') format('woff2'),
-			 url('/src/assets/fonts/ProximaNova-Bold.woff') format('woff');
+  src: url('../../fonts/ProximaNova-Bold.woff2') format('woff2'),
+       url('../../fonts/ProximaNova-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;

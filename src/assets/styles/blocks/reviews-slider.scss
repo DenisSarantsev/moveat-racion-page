@@ -2,6 +2,7 @@
 @use "../common/breakpoints.scss" as *;
 
 .razion-reviews-slider {
+		font-family: "ProximaNovaRegular", Arial, sans-serif;
 		&__wrapper {
 				max-width: 1280px;
 				@media (max-width: 1300px){
@@ -130,10 +131,14 @@
 	@media (max-width: $mobile){
 		padding: 25px 15px;
 	}
+	& a {
+		background-color: transparent;
+	}
 		&__name {
 			display: flex;
 			gap: 10px;
 			align-items: center;
+			background-color: transparent;
 		}
 		&__icon {
 			max-width: 35px;
@@ -141,6 +146,8 @@
 		}
 		&__name-label {
 			font-size: 24px;
+			color: $accent-color;
+			font-weight: 500;
 		}
 		&__review-text {
 			font-size: 18px;

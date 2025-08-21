@@ -1,20 +1,44 @@
 @use "../common/colors.scss" as *;
 @use "../common/breakpoints.scss" as *;
+@use "../common/animations.scss" as *;
 
 .razion-start-block {
 	background-color: $light-grey-background;
+	font-family: "ProximaNovaRegular", Arial, sans-serif;
 		&__wrapper {
 			width: 100%;
 			display: flex;
 			flex-direction: column;
 		}
 		&__title {
-		}
-		&__subtitle {
-			font-size: 40px;
-			line-height: 120%;
+			width: 100%;
+			text-align: left;
+			display: flex;
+			justify-content: start;
+			opacity: 0;
+			transform: translateY(-10px);
+			animation: showBlockFromTop 0.5s ease 0.1s forwards;
 			@media (max-width: $small-tablet){
 				text-align: center;
+				justify-content: center;
+			}
+		}
+		&__subtitle {
+			width: 100%;
+			width: 100%;
+			text-align: left;
+			display: flex;
+			justify-content: start;
+			font-size: 40px;
+			line-height: 120%;
+			opacity: 0;
+			transform: translateY(-10px);
+			font-weight: 400;
+			animation: showBlockFromTop 0.5s ease 0.2s forwards;
+			color: $main-color;
+			@media (max-width: $small-tablet){
+				text-align: center;
+				justify-content: center;
 				font-size: 34px;
 				margin-top: 10px;
 			}
@@ -47,6 +71,9 @@
 			flex-direction: column;
 			gap: 20px;
 			align-self: stretch;
+			opacity: 0;
+			transform: translateY(-10px);
+			animation: showBlockFromTop 0.5s ease 0.3s forwards;
 		}
 		&__lists {
 			display: grid;
@@ -111,6 +138,9 @@
 			height: 100%;
 			overflow: hidden;
 			position: relative;
+			opacity: 0;
+			transform: translateY(-10px);
+			animation: showBlockFromTop 0.6s ease 0.4s forwards;
 			@media (max-width: $tablet){
 				max-width: 100%;
 			}

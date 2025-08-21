@@ -2,6 +2,7 @@
 @use "../common/breakpoints.scss" as *;
 
 .razion-body-system {
+		font-family: "ProximaNovaRegular", Arial, sans-serif;
 		&__wrapper {
 			display: flex;
 			flex-direction: column;

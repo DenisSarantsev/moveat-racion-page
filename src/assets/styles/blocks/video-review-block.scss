@@ -2,6 +2,7 @@
 @use "../common/breakpoints.scss" as *;
 
 .razion-reviews-video {
+	font-family: "ProximaNovaRegular", Arial, sans-serif;
 	background-color: $light-grey-background;
 		&__wrapper {
 			display: flex;

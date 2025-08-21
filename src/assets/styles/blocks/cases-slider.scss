@@ -2,6 +2,7 @@
 @use "../common/breakpoints.scss" as *;
 
 .razion-cases-slider {
+	font-family: "ProximaNovaRegular", Arial, sans-serif;
 	background-color: $light-grey-background;
 	&__wrapper {
 		position: relative;
