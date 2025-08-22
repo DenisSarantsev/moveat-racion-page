@@ -87,12 +87,14 @@
 		&__button {
 			@media (max-width: $mobile){
 				font-size: 20px;
+				text-align: center;
 			}
 		}
 		&__button-wrapper {
 			& a {
 				@media (max-width: $mobile){
 					font-size: 20px;
+					text-align: center;
 				}
 			}
 		}

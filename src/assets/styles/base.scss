@@ -1,5 +1,6 @@
 @use "./common/colors.scss" as *;
 @use "./common/animations.scss" as *;
+@use "./common/breakpoints.scss" as *;
 
 body {
 	color: $main-color;
@@ -7,11 +8,13 @@ body {
 }
 
 main {
-	&>*:not(:first-child) {
-		opacity: 0;
-		transform: translateX(-10px);
-		&.scrolled {
-			animation: showBlockFromTop 0.5s ease 0s forwards;
+	@media (min-width: $small-tablet){
+		&>*:not(:first-child) {
+			opacity: 0;
+			transform: translateX(-10px);
+			&.scrolled {
+				animation: showBlockFromTop 0.5s ease 0s forwards;
+			}
 		}
 	}
 }
